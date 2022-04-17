@@ -1,0 +1,65 @@
+// page [160px   |                      | 160px]  26px to vertical
+//
+//      [        | logo             Btn |      ]
+//      [        |        content       |      ]
+//      [        |      content         |      ]
+//      [        |    content           |      ]
+//      [        |      content         |      ]
+//      [        |        content       |      ]
+
+.navbar                                     {border: 0px solid black;}
+.navLogoContainer, .navBtnContainer         {border: 0px solid orange;}
+.LogoContainer, .BtnContainer               {border: 0px solid green;}
+.navlogo, .navBtn                              {border: 0px solid white;}
+
+.navbar{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  margin-top: 10px;
+  padding: 16px 150px;
+  display: flex;
+
+  .navLogoContainer, .navBtnContainer{
+    width: 50vw;}
+  .LogoContainer{float: left}
+  .BtnContainer {
+    margin-top: 20px;
+    float: right;
+
+  }
+  .LogoContainer, .BtnContainer{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navlogo, .navBtn {text-decoration: none;}
+
+  .navlogo{
+    color: #3b3b3b;
+    font-size: 2em;
+    letter-spacing: 4px;
+    padding: 9px 26px 9px 0px;
+  }
+
+  .logo{
+    width: 200px;
+  }
+  .navBtn{
+    color: #3b3b3b;
+    display: block;
+    font-size: 1em;
+    padding: 9px 26px;
+    border-radius: 4px;
+    border: 1px solid #3b3b3b;
+  }
+}
+
+
+
+//////////////////////////////////////////
+
+

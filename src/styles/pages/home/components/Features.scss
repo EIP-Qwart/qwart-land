@@ -1,0 +1,95 @@
+
+section-1{margin-top: 100vh;}
+
+@media only screen and (max-width: 850px) {
+    .section-title{
+        font-size: 4px;
+    }
+
+    section {
+        .sectionDetail {
+            .sectionDetailImage , .sectionDetailImageContainer{
+            width: 100px;
+        }
+            .sectionDetailText {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+section {
+    height: auto;
+    width: auto;
+    text-align: center;
+    * {
+        font-weight: bold;
+        color: #3b3b3b;
+    }
+    .sectionDetail{
+        width: 100vw;
+        height: 100vh;
+
+        .sectionDetailTextContainer, sectionDetailImageContainer {
+            margin: 0;
+            padding: 0;
+            width: 50%;
+        }
+
+        .sectionDetailText {
+            height: auto;
+            left: 35%;
+            top: 18%;
+            width: 900px;
+            font-size: 1.45em;
+            text-align: left;
+        }
+
+        .sectionDetailImage{
+            width: 950px;
+            border-radius: 9px;
+            box-shadow: 10px 5px 5px #b9b9b9;
+        }
+    }
+
+    .presentation-section {
+        p, .section-title {
+            display: block;
+            margin: 50px auto 30px auto;
+        }
+
+        .section-title {
+            word-spacing: 1.4rem;
+            text-transform: uppercase;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        .name-Qwart {
+            font-size: 3.2em;
+            margin: 0px auto 0px auto;
+        }
+
+        .get_started_button {
+            margin-top: 30px;
+            background: #BA86FB;
+            * {
+                color: #FFF;
+            }
+            color: #FFF;
+            font-size: 1em;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+
+        }
+
+        .imagep{
+
+        }
+    }
+}
