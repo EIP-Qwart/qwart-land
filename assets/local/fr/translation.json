@@ -1,0 +1,38 @@
+{
+  "language": "langues",
+  "socialMedia": "réseaux sociaux",
+  "landSectionDescription": "Nous poussons à la Créativité et la Collaboration",
+  "landSectionBTNStart": "Commencer",
+  "landSectionBTNDownload": "Télécharger",
+  "landSectionBTNSignIn": "Insciption",
+  "landSectionBTNLogIn" : "Connection",
+
+
+
+  "sonetitle": "Partout",
+  "s_one_description": "Accès rapide, à distance et sécurisé",
+  "s_one_text" :"Qwart est disponible sur de nombreux appareils, il vous apportera une grande flexibilité dans votre travail. Il vous sera très facile de partager vos créations à des professionnels ou vos amis. Et ne vous inquiétez pas, vos données sont stockées dans des clouds hyper sécurisés.",
+
+
+
+  "stwotitle": "Coworking",
+  "s_two_description": "Construisez votre équipe, créez votre monde",
+  "s_two_text" :"Let's stop using intermediate tools. You will be able to create teams and join\" +\n                            \" organization. This will allow you to work collaboratively with your colleagues, have\" +\n                            \" your conversations and work at your fingertips.\\n",
+
+
+
+  "sthreetitle": "Versionning",
+  "s_three_description": "Construisez, Transformez, Performez, faites confiance à votre créativité ",
+  "s_three_text" :"Nous offrons un service de stockage sans fil. Vous pouvez innover comme bon vous semble et revenir sur vos décisions quand vous le souhaitez. En effet nous vous proposons en service de versioning, vous permettant de récupérer d'anciennes versions de votre travail.",
+
+
+
+  "sfourtitle": "Simple e Efficasse, Adopt Qwart",
+  "s_four_description": "Easily create and publish visual content. And work in Team for amazing results.",
+
+
+
+  "footer_description": "Votre meilleur atout en tant que créateur"
+
+
+}
