@@ -79,10 +79,10 @@ const Navbar = ({t}) => {
             <div className="bar-section-2">
                 <LanguageWidget/>
                 <div className={"bar-section-NavLink"}>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }}  to={"https://qwart.thibaultblaise.fr#Team"}>{t("navbarProjet")}</NavLink>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }}  to={"https://qwart.thibaultblaise.fr#Team"}  >{t("navbarTeam")}</NavLink>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }} to={"https://qwart.thibaultblaise.fr#Timeline"}  >{t("navbarTimeline")}</NavLink>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }} to={"/https://qwart.thibaultblaise.fr#login"}  >{t("navbarContact")}</NavLink>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#projet">{t("navbarProjet")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }}  href="localhost:3000#team"  >{t("navbarTeam")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#timelin"  >{t("navbarTimeline")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#contact" >{t("navbarContact")}</a>
                 </div>
             </div>
         </div>;
@@ -93,7 +93,7 @@ const Navbar = ({t}) => {
 const LandSection = ({t}) => {
 
     const RouteChange=()=> {
-        let path = "www.google.fr";
+        let path = "/beta";
         let history = useHistory();
         history.push(path);
     }
@@ -110,7 +110,7 @@ const LandSection = ({t}) => {
                             <Button className={"get_started_button"}
                                     target="_blank" rel="noopener noreferrer"
                                     variant="contained"
-                                    onClick={RouteChange}
+                                    href="http://app.qwart-studio.fr"
                                     >
                                 {t('landSectionBTNStart')}
                             </Button>
