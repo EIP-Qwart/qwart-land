@@ -2,16 +2,26 @@
   "language": "langues",
   "socialMedia": "réseaux sociaux",
   "landSectionDescription": "Nous poussons à la Créativité et la Collaboration",
-  "landSectionBTNStart": "Commencer",
+  "landSectionBTNStart": "Accéder à la beta",
   "landSectionBTNDownload": "Télécharger",
   "landSectionBTNSignIn": "Insciption",
   "landSectionBTNLogIn" : "Connection",
 
+  "s_question": "Des quetions? contactez-nous",
 
 
-  "sonetitle": "Partout",
-  "s_one_description": "Accès rapide, à distance et sécurisé",
-  "s_one_text" :"Qwart est disponible sur de nombreux appareils, il vous apportera une grande flexibilité dans votre travail. Il vous sera très facile de partager vos créations à des professionnels ou vos amis. Et ne vous inquiétez pas, vos données sont stockées dans des clouds hyper sécurisés.",
+  "navbarProjet":  "Projet",
+  "navbarTeam":  "Equipe",
+  "navbarTimeline":  "Timeline",
+  "navbarContact":  "Contact",
+
+
+  "tryBeta": "Try the beta now",
+
+
+  "sonetitle": "Qwart",
+  "s_one_description": "La plateforme créée pour les designers",
+  "s_one_text" :"Qwart is available on many devices, it will bring you great flexibility in your work. It will be very easy for you to share your work with professionals or your friends. And don't worry, your data is stored up in hyper-secure clouds.",
 
 
 

@@ -3,21 +3,29 @@
   "language": "language",
   "socialMedia": "Social links",
   "landSectionDescription": "We help designers in their Creativity and Collaboration",
-  "landSectionBTNStart": "Get Started",
+  "landSectionBTNStart": "Access to the Beta",
   "landSectionBTNDownload": "Download",
   "landSectionBTNSignIn": "Sign In",
   "landSectionBTNLogIn" : "Connexion",
 
 
+  "s_question": "Any question? contact us",
 
-  "sonetitle": "Everywhere",
-  "s_one_description": "Ease access, Online and Secured",
+
+  "navbarProjet":  "Project",
+  "navbarTeam":  "Team",
+  "navbarTimeline":  "Timeline",
+  "navbarContact":  "Contact",
+
+  "tryBeta": "Essayer la Beta",
+
+
+  "sonetitle": "Qwart",
+  "s_one_description": "The platform designed for Graphic Designers",
   "s_one_text" :"Qwart is available on many devices, it will bring you great flexibility in your work. It will be very easy for you to share your work with professionals or your friends. And don't worry, your data is stored up in hyper-secure clouds.",
 
 
-
-
-  "sonetitle": "Coworking",
+  "stwotitle": "Coworking",
   "s_one_description": "Build your Team, Create your World",
   "s_one_text" :"Let's stop using intermediate tools. You will be able to create teams and join organization. This will allow you to work collaboratively with your colleagues, have your conversations and work at your fingertips.",
 

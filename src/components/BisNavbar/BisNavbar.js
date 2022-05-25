@@ -50,9 +50,7 @@ const LanguageWidget = () => {
     )
 }
 
-
 const BisNavbar = ({t}) => {
-    
     const currentLanguageCode = cookies.get('i18next') || 'en'
     const currentLanguage = language.find((l) => l.code === currentLanguageCode)
     
@@ -81,11 +79,11 @@ const BisNavbar = ({t}) => {
                         
             <div className={"navBtnContainer"}>
                     <div className="BtnContainer">
-                        <NavLink className={"navBtn"} to={"/download"}   >{t('landSectionBTNDownload')}</NavLink>
+                        <NavLink className={"navBtn"} to={"http://app.qwart-studio.fr/"}   >{t('tryBeta')}</NavLink>
                     </div>
                 </div>
         </div>;
-    
+
     const subNavbar =
         <div className={"barItem"}>
             <div className="bar-section-1">
@@ -96,7 +94,7 @@ const BisNavbar = ({t}) => {
                 <NavLink className={"bar-button"} to={"/download"} >Download</NavLink>
             </div>
         </div>;
-    
+
     return (subNavbar);
 };
 

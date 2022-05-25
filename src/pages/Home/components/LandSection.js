@@ -6,10 +6,9 @@ import {Button} from "@material-ui/core";
 import {Dropdown} from "react-bootstrap";
 import i18next from "i18next";
 import cookies from 'js-cookie'
-import {NavLink} from "react-router-dom";
+import {NavLink, useHistory} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from "locomotive-scroll/src/scripts/Main";
-
 
 const GlobeIcon = ({ width = 24, height = 24 }) => (
     <svg
@@ -45,8 +44,8 @@ const LanguageWidget = () => {
             return (i18next.language.toUpperCase())
         return ("EN")
     }
-    
-    
+
+
     return (
         <Dropdown className={"dropdownLang"}>
             <Dropdown.Toggle style={{background: "white", color: "#3b3b3b", border: "none"}}
@@ -79,10 +78,11 @@ const Navbar = ({t}) => {
             
             <div className="bar-section-2">
                 <LanguageWidget/>
-                
                 <div className={"bar-section-NavLink"}>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }}  to={"/signin"}  >{t("landSectionBTNSignIn")}</NavLink>
-                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }} to={"/login"}  >{t("landSectionBTNLogIn")}</NavLink>
+                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }}  to={"https://qwart.thibaultblaise.fr#Team"}>{t("navbarProjet")}</NavLink>
+                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }}  to={"https://qwart.thibaultblaise.fr#Team"}  >{t("navbarTeam")}</NavLink>
+                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }} to={"https://qwart.thibaultblaise.fr#Timeline"}  >{t("navbarTimeline")}</NavLink>
+                    <NavLink className={"navBarLink"} style={{ textDecoration: 'none' }} to={"/https://qwart.thibaultblaise.fr#login"}  >{t("navbarContact")}</NavLink>
                 </div>
             </div>
         </div>;
@@ -91,6 +91,14 @@ const Navbar = ({t}) => {
 };
 
 const LandSection = ({t}) => {
+
+    const RouteChange=()=> {
+        let path = "www.google.fr";
+        let history = useHistory();
+        history.push(path);
+    }
+
+
     return (
         <div>
             <div className={"landSectionContainer"}>
@@ -99,7 +107,13 @@ const LandSection = ({t}) => {
                     <div className={"pan"}>
                         <h1 className={"title"}>{t('landSectionDescription')}</h1>
                         <h3 className={"description"}>
-                            <Button href="google.com" className={"get_started_button"} variant="contained">{t('landSectionBTNStart')}</Button>
+                            <Button className={"get_started_button"}
+                                    target="_blank" rel="noopener noreferrer"
+                                    variant="contained"
+                                    onClick={RouteChange}
+                                    >
+                                {t('landSectionBTNStart')}
+                            </Button>
                         </h3>
                     </div>
                     
