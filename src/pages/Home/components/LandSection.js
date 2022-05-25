@@ -79,10 +79,10 @@ const Navbar = ({t}) => {
             <div className="bar-section-2">
                 <LanguageWidget/>
                 <div className={"bar-section-NavLink"}>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#projet">{t("navbarProjet")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }}  href="localhost:3000#team"  >{t("navbarTeam")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#timelin"  >{t("navbarTimeline")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="localhost:3000#contact" >{t("navbarContact")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#projet">{t("navbarProjet")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }}  href="#team"  >{t("navbarTeam")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#timeline"  >{t("navbarTimeline")}</a>
+                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#contact" >{t("navbarContact")}</a>
                 </div>
             </div>
         </div>;
