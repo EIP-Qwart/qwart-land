@@ -1,11 +1,10 @@
 # stage1 - build react app first
-FROM node:current-alpine
+FROM node:14
 WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
-COPY ./package.json /app/
-COPY ./package-lock.json /app/
-RUN npm install --silent
+COPY ./package.json .
+COPY ./package-lock.json .
+RUN npm install
 RUN npm install -g serve
-COPY . /app
+COPY . .
 RUN npm run build
 CMD ["serve", "-s", "build"]
