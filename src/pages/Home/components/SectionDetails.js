@@ -41,6 +41,7 @@ const themeImage = [
 const SectionDetails = (props) => {
     const {text} = props;
     const {img} = props;
+    const {t} = props;
     const themeIdx = 0;
 
     return (
@@ -49,7 +50,7 @@ const SectionDetails = (props) => {
                 <Animator animation={themeText[themeIdx]}>
                     <div className={"sectionDetailTextContainer"}>
                             <p className={"sectionDetailText"}>
-                                {ph1}
+                                {t('s_one_description1')}
                             </p>
                     </div>
                 </Animator>

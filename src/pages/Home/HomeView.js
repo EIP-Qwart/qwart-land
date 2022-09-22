@@ -49,6 +49,7 @@ const HomeView = ({t}) => {
 
                     {fixer(increment())}
 
+                    <div id={"idFix1"}></div>
                     <SectionAnimation page={increment()} animation={FadeUp}>
                         <SectionTeaser
                             title={t('sonetitle')}
@@ -56,18 +57,20 @@ const HomeView = ({t}) => {
                         />
                     </SectionAnimation>
 
-                    <SectionAnimation page={increment()} >
+                    <SectionAnimation page={increment()} id={"test2"} >
                         <SectionDetails
                             text={t('s_one_text')}
+                            t={t}
                             themeIdx={0}
                             img={"eyo.png"}
                         />
                     </SectionAnimation>
 
-
                     {fixer(increment())}
 
-                    <SectionAnimation page={increment()} animation={FadeUp}>
+                    <div id={"idFix2"}></div>
+
+                    <SectionAnimation page={increment()} animation={FadeUp} id={"test3"}>
                         <SectionTeaser id="timeline"
                             description={"Timeline"}
                         />
@@ -79,6 +82,7 @@ const HomeView = ({t}) => {
 
                     {fixer(increment())}
 
+                    <div id={"idFix3"}></div>
                     <SectionAnimation page={increment()} animation={FadeUp}>
                         <SectionTeaser
                             description={"Notre Equipe"}
@@ -91,6 +95,7 @@ const HomeView = ({t}) => {
 
                     {fixer(increment())}
 
+                    <div id={"idFix4"}></div>
                     <SectionAnimation page={increment()} animation={FadeUp}>
                         <SectionTeaser
                             title={t('s_question')}

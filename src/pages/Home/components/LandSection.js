@@ -1,14 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import facebookLogo from "../../../assets/socialMediaLogo/facebookLogo.png"
 import twitterLogo from "../../../assets/socialMediaLogo/twitterLogo.png"
 import instagramLogo from "../../../assets/socialMediaLogo/instagramLogo.png"
-import {Button} from "@material-ui/core";
+import {Button, Collapse, IconButton} from "@material-ui/core";
 import {Dropdown} from "react-bootstrap";
 import i18next from "i18next";
 import cookies from 'js-cookie'
 import {NavLink, useHistory} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from "locomotive-scroll/src/scripts/Main";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link as Scroll } from 'react-scroll';
 
 const GlobeIcon = ({ width = 24, height = 24 }) => (
     <svg
@@ -67,7 +69,7 @@ const LanguageWidget = () => {
 
 const Navbar = ({t}) => {
     const navList = document.getElementById("nav-lists");
-    
+
     
     const MainNavBar =
         <div className={"barItemPressed"}>
@@ -79,10 +81,18 @@ const Navbar = ({t}) => {
             <div className="bar-section-2">
                 <LanguageWidget/>
                 <div className={"bar-section-NavLink"}>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#projet">{t("navbarProjet")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }}  href="#team"  >{t("navbarTeam")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#timeline"  >{t("navbarTimeline")}</a>
-                    <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#contact" >{t("navbarContact")}</a>
+                    <Scroll activeClass="active" smooth={true} to={"idFix1"}>
+                        <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#projet">{t("navbarProjet")}</a>
+                    </Scroll>
+                    <Scroll activeClass="active" smooth={true} to={"idFix2"}>
+                        <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#timeline"  >{t("navbarTimeline")}</a>
+                    </Scroll>
+                    <Scroll activeClass="active" smooth={true} to={"idFix3"}>
+                        <a className={"navBarLink"} style={{ textDecoration: 'none' }}  href="#team"  >{t("navbarTeam")}</a>
+                    </Scroll>
+                    <Scroll activeClass="active" smooth={true} to={"idFix4"}>
+                        <a className={"navBarLink"} style={{ textDecoration: 'none' }} href="#contact" >{t("navbarContact")}</a>
+                    </Scroll>
                 </div>
             </div>
         </div>;
@@ -97,33 +107,45 @@ const LandSection = ({t}) => {
         let history = useHistory();
         history.push(path);
     }
-
+    const [checked, setChecked] =useState(false)
+    useEffect( ()=> {
+        setChecked(true)
+    })
 
     return (
         <div>
             <div className={"landSectionContainer"}>
                 <div className={"section1"}>
                     <Navbar t={t}/>
-                    <div className={"pan"}>
-                        <h1 className={"title"}>{t('landSectionDescription')}</h1>
-                        <h3 className={"description"}>
-                            <Button className={"get_started_button"}
-                                    target="_blank" rel="noopener noreferrer"
-                                    variant="contained"
-                                    href="http://app.qwart-studio.fr"
-                                    >
-                                {t('landSectionBTNStart')}
-                            </Button>
-                        </h3>
-                    </div>
-                    
+                        <div className={"pan"}>
+                            <Collapse in={checked} {...(checked ? {timeout: 1000} : {})} collapsedHeight={50}>
+                            <h1 className={"title"}>{t('landSectionDescription')}</h1>
+                            <h3 className={"description"}>
+                                <Button className={"get_started_button"}
+                                        target="_blank" rel="noopener noreferrer"
+                                        variant="contained"
+                                        href="http://app.qwart-studio.fr"
+                                        >
+                                    {t('landSectionBTNStart')}
+                                </Button>
+                            </h3>
+                            <h3 className={"buttonNextContainer"}>
+                                <Scroll activeClass="active" smooth={true} to={"idFix1"}>
+                                    <IconButton>
+                                        <ExpandMoreIcon className={"buttonNext"}/>
+                                    </IconButton>
+                                </Scroll>
+                            </h3>
+                            </Collapse>
+                        </div>
+
                     <div className={"footerBar"}>
                         <div className="LogoContainer">
                             <img src="Logo_Q.png" className={"logo"}/>
                         </div>
                         <div className="socialMediaContainer">
                                 <p className="socialMediaText">{t('socialMedia')}:</p>
-                            <div className="socialMediaLogo">
+                            <div className="socialMediaLogo" id={"test"}>
                                 <a className="socialMediaLogoLink" href={"#"}><img src={facebookLogo}/></a>
                                 <a className="socialMediaLogoLink" href={"#"}><img src={twitterLogo}/></a>
                                 <a className="socialMediaLogoLink" href={"#"}><img src={instagramLogo}/></a>

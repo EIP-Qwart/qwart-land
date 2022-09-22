@@ -11,9 +11,20 @@
 
   .pan {
     position: relative;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
 
+    .buttonNextContainer {
+      margin: 150px auto 0 auto;
+      text-align: center;
+      text-align: center;
+
+      .buttonNext {
+        font-size: 3em;
+
+      }
+
+    }
 
     .title {
       font-size: 3em;

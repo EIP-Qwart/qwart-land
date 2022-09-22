@@ -9,6 +9,10 @@ const Routes = ({t}) => {
             <Route path="/">
                 <Home t={t}/>
             </Route>
+            <Route path='/beta' component={() => {
+                window.location.href = 'https://example.com/1234';
+                return null;
+            }}/>
             <Route path="/home" exact component={Home} />
             <Route component={NotFound} t={t}/>
         </Switch>

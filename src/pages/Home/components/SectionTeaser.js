@@ -7,7 +7,7 @@ const SectionTeaser = (props) => {
     const animation = batch(Fade(), MoveIn(), MoveOut(0, -400), Sticky())
     
     return (
-        <section className={"section-1"}>
+        <section className={"section-1"} id={"projet-section-id"}>
                 <div className="presentation-section" >
                     {title ?? (<p className={"section-description"}>{title}</p>)}
                     <h1 className={"section-title"}>{description}</h1>
