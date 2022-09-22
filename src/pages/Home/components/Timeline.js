@@ -47,45 +47,45 @@ const MyTimelineItem = (props) => {
 };
 
 
-const TimelineSection = () => {
+const TimelineSection = ({t}) => {
     return (
         <section>
             <div className="presentation-section">
                 <div>
                     <Timeline position="alternate">
                         <MyTimelineItem
-                            oppositeContent={"01/09/2020"}
-                            content={"Création de l'équipe"}
+                            oppositeContent={t('date1')}
+                            content={t('content1')}
                             color={true}
                             connector={true}
                         />
                         <MyTimelineItem
-                            oppositeContent={"05/07/2021"}
-                            content={"Test & Learn"}
+                            oppositeContent={t('date2')}
+                            content={t('content2')}
                             color={true}
                             connector={true}
                         />
                         <MyTimelineItem
-                            oppositeContent={"27/10/2021"}
-                            content={"Management & Processes"}
+                            oppositeContent={t('date3')}
+                            content={t('content3')}
                             connector={true}
                             color={true}
                         />
                         <MyTimelineItem
-                            oppositeContent={"24/01/2022"}
-                            content={"Fast Forward"}
+                            oppositeContent={t('date4')}
+                            content={t('content4')}
                             color={true}
                             connector={true}
                         />
                         <MyTimelineItem
-                            oppositeContent={"25/05/2022"}
-                            content={"Beta & Grow Hacking"}
+                            oppositeContent={t('date5')}
+                            content={t('content5')}
                             color={true}
                             connector={true}
                         />
                         <MyTimelineItem
-                            oppositeContent={"Bientôt"}
-                            content={"Consolidation"}
+                            oppositeContent={t('date6')}
+                            content={t('content6')}
                             color={false}
                             connector={false}
                         />

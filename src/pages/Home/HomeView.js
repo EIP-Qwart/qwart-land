@@ -77,7 +77,7 @@ const HomeView = ({t}) => {
                     </SectionAnimation>
 
                     <SectionAnimation page={increment()} >
-                        <TimelineSection/>
+                        <TimelineSection t={t}/>
                     </SectionAnimation>
 
                     {fixer(increment())}
@@ -85,7 +85,7 @@ const HomeView = ({t}) => {
                     <div id={"idFix3"}></div>
                     <SectionAnimation page={increment()} animation={FadeUp}>
                         <SectionTeaser
-                            description={"Notre Equipe"}
+                            description={t('Team')}
                         />
                     </SectionAnimation>
 

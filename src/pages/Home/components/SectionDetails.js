@@ -58,7 +58,7 @@ const SectionDetails = (props) => {
                 <Animator animation={themeText[1]}>
                     <div className={"sectionDetailTextContainer"}>
                         <p className={"sectionDetailText"}>
-                            {ph2}
+                            {t('s_one_description2')}
                         </p>
                     </div>
                 </Animator>
@@ -66,7 +66,7 @@ const SectionDetails = (props) => {
                 <Animator animation={themeText[2]}>
                     <div className={"sectionDetailTextContainer"}>
                         <p className={"sectionDetailText"}>
-                            {ph3}
+                            {t('s_one_description3')}
                         </p>
                     </div>
                 </Animator>
@@ -74,7 +74,7 @@ const SectionDetails = (props) => {
                 <Animator animation={themeText[3]}>
                     <div className={"sectionDetailTextContainer"}>
                         <p className={"sectionDetailText"}>
-                            {ph4}
+                            {t('s_one_description4')}
                         </p>
                     </div>
                 </Animator>
